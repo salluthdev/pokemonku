@@ -10,3 +10,18 @@ body
 	font-family: 'Poppins', sans-serif;
 	overflow-x: hidden;
 }
+header
+{
+	background: #333;
+	color: #fff;
+	padding: 12px 60px;
+}
+.wrapper
+{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+header nav
+{
+
+}
