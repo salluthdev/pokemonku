@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 *
 {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: 'Noto Sans', sans-serif;
 }
 body
 {
-	font-family: 'Poppins', sans-serif;
 	overflow-x: hidden;
+	background: #fdfdfd;
 }
 header
 {
@@ -21,7 +22,72 @@ header
 	max-width: 1200px;
 	margin: 0 auto;
 }
-header nav
+main
 {
-
+	padding: 0 60px;
+}
+main .search
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 14px 0;
+}
+main .search h2, main .all-pokemon h2
+{
+	font-size: 22px;
+	color: #333;
+}
+main .search .search-input
+{
+	display: flex;
+	align-items: center;
+	margin-top: 6px;
+}
+main .search .search-input input
+{
+	width: 500px;
+	font-size: 14px;
+	color: #666;
+	padding: 8px 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px 0 0 4px;
+	outline: none;
+}
+main .search .search-input input::placeholder
+{
+	color: #666;
+}
+main .search .search-input button
+{
+	height: 37px;
+	padding: 0 8px;
+	font-size: 14px;
+	color: #fff;
+	background: #333;
+	border: none;
+	border-radius: 0 4px 4px 0;
+}
+hr
+{
+	border-top: 1px solid #ddd;
+	border-bottom: unset;
+	margin: 14px 0;
+}
+main .all-pokemon .card-wrapper
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin: 8px 0;
+}
+main .all-pokemon .card-wrapper .card
+{
+	flex: 1;
+	min-width: 160px;
+	height: 200px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
 }
